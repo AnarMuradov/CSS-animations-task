@@ -1,0 +1,186 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar {
+  max-width: 100%;
+  height: 60px;
+  background-color: white;
+}
+.navcontainer {
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navitems {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  cursor: pointer;
+}
+.cart {
+  cursor: pointer;
+  width: 109px;
+  height: 47px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 500ms;
+}
+.cart:hover {
+  background-color: black;
+  color: white;
+}
+.navitems h2 {
+  font-weight: 400;
+}
+.navitems h4 {
+  font-weight: 400;
+}
+.menu {
+  display: none;
+}
+@media only screen and (max-width: 425px) {
+  .navitems {
+    font-size: smaller;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navitems h4 {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu button {
+    width: 55px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(0 0 1 / 17%);
+    border-radius: 5px;
+    font-size: 25px;
+  }
+}
+.header {
+  max-width: 100%;
+  height: 290px;
+  background-color: #212529;
+}
+.hinfo {
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hinfo h1 {
+  font-size: 52px;
+  color: white;
+}
+.hinfo p {
+  color: #ffffff80;
+}
+img {
+  width: 258px;
+  height: 178px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card {
+  width: 258px;
+  height: 400px;
+  margin-top: 50px;
+  border: 1px solid rgb(0 0 1 / 17%);
+  border-radius: 10px;
+  position: relative;
+}
+.cardinfo .icon {
+  font-size: 14px;
+  text-align: center;
+  color: orange;
+}
+.section {
+  max-width: 100%;
+  min-height: 1100px;
+}
+
+.scontainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 50px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1240px) {
+  .scontainer {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .scontainer {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .scontainer {
+    grid-template-columns: auto;
+  }
+}
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 222px;
+  width: 258px;
+}
+.btn button {
+  width: 117px;
+  height: 38px;
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid black;
+  transition: 500ms;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: black;
+  color: white;
+}
+.card .sale {
+  position: absolute;
+  right: 10px;
+  background-color: black;
+  top: 10px;
+  color: white;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 130px;
+  background-color: #212529;
+}
+footer div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
